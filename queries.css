@@ -1,0 +1,108 @@
+/* Large screens (desktops) */
+@media (min-width: 1200px) {
+    .box {
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .header h2 {
+        font-size: 2.8rem;
+    }
+
+    .header p {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 22px;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 991px) {
+    .box {
+        max-width: 90%;
+        margin: 40px auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .header h2 {
+        font-size: 2.2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    input[type="text"] {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    button {
+        min-height: 45px;
+        width: 45px;
+        font-size: 26px;
+    }
+}
+
+/* Small devices (phones) */
+@media (max-width: 576px) {
+    .box {
+        margin: 30px auto;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        padding: 5px;
+    }
+
+    .header h2 {
+        font-size: 1.8rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    .item {
+        min-height: 60px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    p {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        height: 50px;
+        font-size: 16px;
+        width: 80%;
+    }
+
+    button {
+        min-height: 40px;
+        width: 40px;
+        font-size: 22px;
+    }
+
+    .footer {
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+}

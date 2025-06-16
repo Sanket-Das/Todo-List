@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="queries.css">
+    <title>Todo List</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h2>📝 My Todo List App</h2>
+        <p>Stay organized, stay productive!</p>
+    </header>
+
+    <!-- Main Todo Section -->
+    <div class="box">
+        <h1>Todo List</h1>
+    </div>
+    <div class="box">
+       <% for(var i=0; i<ejes.length; i++){ %>
+        <div class="item">
+            <input type="checkbox">
+            <p><%= ejes[i] %></p>
+        </div>
+       <% } %>
+       <form id="todoForm" action="/" method="POST" onsubmit="return validateForm()">
+    <input type="text" id="taskInput" name="task" placeholder="Enter the task">
+    <button type="submit">+</button>
+</form>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with ❤️ by Sanket • &copy; <%= new Date().getFullYear() %></p>
+    </footer>
+
+
+
+
+    <script>
+  function validateForm() {
+    const task = document.getElementById("taskInput").value.trim();
+    if (task === "") {
+      alert("Please enter a task before adding!");
+      return false; // prevent form submission
+    }
+    return true; // allow form submission
+  }
+</script>
+
+</body>
+</html>
